@@ -1,13 +1,27 @@
 :root {
     --color-body: #E8DAB2;
+    --color-card: #ececec;
     --color-background: #090909;
     --color-link:#35B1D2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 65.5%;
+}
+
+body {
+    background-color: var(--color-body);
 }
 
 .title {
@@ -17,6 +31,7 @@ html {
 
 .subtitle {
     font-family: 'Raleway';
+    font-style: italic;
     font-size: 2.3rem;
 }
 
@@ -27,8 +42,18 @@ h2 {
 
 p {
     font-family: 'Raleway';
-    font-size: 5.2rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
+
+    margin-bottom: 2rem;
+}
+
+li {
+    font-family: 'Raleway';
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    margin-bottom: 2rem;
 }
 
 /* Esconde uma tag */
@@ -44,14 +69,19 @@ p {
     border-width: 0;
 }
 
+.center {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Scroll */
 ::-webkit-scrollbar-track {
-    background-color: #ff0000;
+    background-color: var(--color-body);
 }
 ::-webkit-scrollbar {
     width: 5px;
-    background: #f11616;
+    background: var(--color-body);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--color-link);
+    background: var(--color-background);
 }
